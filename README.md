@@ -1,5 +1,5 @@
 # JEU DU PENDU
-Exercice durant ma formation profesionelle développeur web/web mobile.
+Exercice durant ma formation professionnelle développeur web/web mobile.
 
 CREATION DU JEU DU PENDU
 
