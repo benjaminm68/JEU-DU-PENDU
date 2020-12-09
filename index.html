@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Jeu du Pendu</title>
+</head>
+
+<body>
+
+  <div class="modal">
+    <div class="modal_content">
+      <p>CHOISIR UNE CATÉGORIE</p>
+      <select id="catégorie"></select>
+      <button id="selectionner">Sélectionner</button>
+    </div>
+  </div>
+
+  <div class="wrapper">
+
+
+    <div class="contenu">
+      <h1>JEU DU PENDU</h1>
+
+      <div class="jeu">
+
+        <div class="motAchercher">
+          <h2>MOT MYSTÈRE</h2>
+          <div id="aDeviner"></div>
+        </div>
+        <div class="indication">
+          <h2>INDICATIONS</h2>
+          <div class="indic_content">
+            <div class="compteur">
+              <p>Chance(s) restante: <span id="nombreChance"></span> </p>
+              <p>Lettres utilisées: <span id="lettreUtiliser"></span> </p>
+            </div>
+
+            <div class="pendu">
+
+              <svg id="penduEntier" width="240" height="180" xmlns="http://www.w3.org/2000/svg"
+                xmlns:svg="http://www.w3.org/2000/svg">
+                <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+                <g class="layer">
+                  <title>Layer 1</title>
+                  <line id="pendu_1" stroke="#ff0000" id="svg_3" y2="168" x2="122" y1="168" x1="11" stroke-width="5"
+                    fill="none" />
+                  <line id="pendu_2" y2="39" x2="64" y1="167" x1="65" stroke-linecap="null" stroke-linejoin="null"
+                    stroke-dasharray="null" stroke-width="5" stroke="#ff0000" fill="none" />
+                  <line id="pendu_3" y2="37" x2="163" y1="37" x1="61" stroke-linecap="null" stroke-linejoin="null"
+                    stroke-dasharray="null" stroke-width="5" stroke="#ff0000" fill="none" />
+                  <line id="pendu_4" y2="37" x2="90" y1="61" x1="64" stroke-linecap="null" stroke-linejoin="null"
+                    stroke-dasharray="null" stroke-width="5" stroke="#ff0000" fill="none" />
+                  <line id="pendu_5" y2="62" x2="161" y1="34" x1="161" stroke-linecap="null" stroke-linejoin="null"
+                    stroke-dasharray="null" stroke-width="5" stroke="#ff0000" fill="none" />
+                  <circle id="pendu_6" r="13.0384" cy="75" cx="162" fill-opacity="0" stroke-linecap="null"
+                    stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="#000000" />
+                  <line id="pendu_7" stroke="#000000" id="svg_18" y2="131" x2="162" y1="88" x1="162" fill-opacity="0"
+                    stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none" />
+                  <line id="pendu_8" y2="98" x2="175" y1="98" x1="148" fill-opacity="0" stroke-linecap="null"
+                    stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" stroke="#000000" fill="none" />
+                  <line id="pendu_9" stroke="#000000" id="svg_22" y2="130" x2="162" y1="139" x1="149" fill-opacity="0"
+                    stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none" />
+                  <line id="pendu_10" transform="rotate(77.79953002929688 168.00000000000003,134.99999999999997) "
+                    stroke="#000000" id="svg_24" y2="130.5" x2="174.5" y1="139.5" x1="161.5" fill-opacity="0"
+                    stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="5" fill="none" />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div id="victoire">
+            <p>Bien joué tu as trouvé le mot mystère !</p>
+          </div>
+
+          <div id="defaite">
+            <p>BRRRUUUUUUH tu as été pendu !</p>
+          </div>
+
+        </div>
+
+        <div id="rejouer">
+          <a href="" id="btn_rejouer">REJOUER</a>
+        </div>
+
+        <div id="clavier">
+
+
+          <button id="A">A</button>
+          <button id="B">B</button>
+          <button id="C">C</button>
+          <button id="D">D</button>
+          <button id="E">E</button>
+          <button id="F">F</button>
+          <button id="G">G</button>
+          <button id="H">H</button>
+          <button id="I">I</button>
+          <button id="J">J</button>
+          <button id="K">K</button>
+          <button id="L">L</button>
+          <button id="M">M</button>
+          <button id="N">N</button>
+          <button id="O">O</button>
+          <button id="P">P</button>
+          <button id="Q">Q</button>
+          <button id="R">R</button>
+          <button id="S">S</button>
+          <button id="T">T</button>
+          <button id="U">U</button>
+          <button id="V">V</button>
+          <button id="W">W</button>
+          <button id="X">X</button>
+          <button id="Y">Y</button>
+          <button id="Z">Z</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="http://benjaminmonvoisin.fr"> &copy; BENJAMIN.M</a>
+    </footer>
+  </div>
+
+
+  <script src="js/pendu.js"></script>
+</body>
+
+</html>
